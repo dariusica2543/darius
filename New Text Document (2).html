@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter-Strike 2 - Website Oficial</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Modal Abonare Newsletter -->
+  <div id="newsletterModal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <h2>Abonează-te la Newsletter</h2>
+      <p>Fii la curent cu ultimele noutăți despre Counter-Strike 2!</p>
+      <input type="email" placeholder="Introdu emailul tău">
+      <button id="subscribeBtn">Abonează-te</button>
+    </div>
+  </div>
+
+  <!-- Buton Toggle Dark Mode -->
+  <button id="darkModeToggle" class="toggle-btn">Toggle Dark Mode</button>
+
+  <!-- HEADER -->
+  <header class="parallax">
+    <div class="container header-container">
+      <div class="logo">
+        <img src="https://www.counter-strike.net/img/cs2_logo.png" alt="Counter-Strike 2 Logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">Despre</a></li>
+          <li><a href="#gameplay">Gameplay</a></li>
+          <li><a href="#trailer">Trailer</a></li>
+          <li><a href="#min-specs">Spec. Minime</a></li>
+          <li><a href="#rec-specs">Spec. Recomandate</a></li>
+          <li><a href="#reviews">Recenzii</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#download">Descarcă</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO / INTRO -->
+  <section id="hero" class="info-section fadeInSection">
+    <div class="hero-content">
+      <h1>Counter-Strike 2</h1>
+      <p>Intră în noua eră a jocurilor FPS! Experimentează grafică de ultimă generație și gameplay dinamic.</p>
+      <a href="#about" class="cta-button">Descoperă mai mult</a>
+    </div>
+    <div class="hero-banner">
+      <img src="https://cdn.akamai.steamstatic.com/apps/csgo/images/csgo_react/social/cs2.jpg" alt="Counter-Strike 2 Banner">
+    </div>
+  </section>
+
+  <!-- DESPRE -->
+  <section id="about" class="info-section fadeInSection">
+    <div class="container">
+      <h2>Despre Counter-Strike 2</h2>
+      <p>
+        Counter-Strike 2 este continuarea legendarului joc FPS dezvoltat de Valve Corporation.
+        Lansat în 2025, aduce îmbunătățiri grafice, moduri noi și o experiență dinamică pentru jucători.
+      </p>
+      <p><strong>Dezvoltat de:</strong> Valve Corporation</p>
+      <p><strong>Disponibil pe:</strong> Steam</p>
+    </div>
+  </section>
+
+  <!-- GAMEPLAY -->
+  <section id="gameplay" class="info-section fadeInSection">
+    <div class="container">
+      <h2>Gameplay</h2>
+      <p>Urmărește gameplay-ul pentru a vedea acțiunea în timp real!</p>
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/UIBP_nDdnDs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAILER -->
+  <section id="trailer" class="info-section fadeInSection">
+    <div class="container">
+      <h2>Trailerul Oficial</h2>
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/c80dVYcL69E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECIFICAȚII MINIME -->
+  <section id="min-specs" class="info-section fadeInSection">
+    <div class="container specs-container">
+      <h2>Specificații Minime</h2>
+      <ul>
+        <li><strong>Sistem de operare:</strong> Windows 10 / 11</li>
+        <li><strong>Procesor:</strong> Intel Core i3-8100 / AMD Ryzen 3 1200</li>
+        <li><strong>Memorie:</strong> 8 GB RAM</li>
+        <li><strong>Placă video:</strong> NVIDIA GTX 1050 / AMD RX 560</li>
+        <li><strong>Stocare:</strong> 20 GB spațiu liber</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SPECIFICAȚII RECOMANDATE -->
+  <section id="rec-specs" class="info-section fadeInSection">
+    <div class="container specs-container">
+      <h2>Specificații Recomandate</h2>
+      <ul>
+        <li><strong>Sistem de operare:</strong> Windows 10 / 11 (64-bit)</li>
+        <li><strong>Procesor:</strong> Intel Core i5-9400F / AMD Ryzen 5 2600X</li>
+        <li><strong>Memorie:</strong> 16 GB RAM</li>
+        <li><strong>Placă video:</strong> NVIDIA GTX 1660 Ti / AMD RX 5700</li>
+        <li><strong>Stocare:</strong> 40 GB spațiu liber</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- RECENZII -->
+  <section id="reviews" class="info-section fadeInSection">
+    <div class="container">
+      <h2>Ce spun jucătorii?</h2>
+      <div class="review-slider">
+        <div class="review">
+          <p>"Counter-Strike 2 este incredibil! Grafica și gameplay-ul sunt de top!"</p>
+          <strong>- Andrei</strong>
+        </div>
+        <div class="review">
+          <p>"Experiența de joc este intensă și captivantă. Recomand cu căldură!"</p>
+          <strong>- Maria</strong>
+        </div>
+        <div class="review">
+          <p>"Cel mai bun FPS din ultimii ani! Mult succes Valve!"</p>
+          <strong>- Alex</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="info-section fadeInSection">
+    <div class="container">
+      <h2>Întrebări Frecvente</h2>
+      <div class="faq-item">
+        <h3 class="faq-question">Ce este Counter-Strike 2?</h3>
+        <div class="faq-answer">
+          <p>Counter-Strike 2 este un joc FPS dezvoltat de Valve, continuarea unei francize legendare, cu grafică și gameplay îmbunătățite.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-question">Pe ce platforme este disponibil?</h3>
+        <div class="faq-answer">
+          <p>Este disponibil pe Steam, pentru Windows, macOS și Linux (în anumite versiuni).</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-question">Este gratuit?</h3>
+        <div class="faq-answer">
+          <p>Da, Counter-Strike 2 este gratuit de jucat, cu opțiuni de achiziție în joc.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESCĂRCARE -->
+  <section id="download" class="info-section fadeInSection">
+    <div class="container">
+      <h2>Descarcă Counter-Strike 2</h2>
+      <p>Accesează pagina oficială Steam pentru a descărca și juca!</p>
+      <button class="download-button">Descarcă acum</button>
+    </div>
+  </section>
+
+  <!-- BUTON SCROLL TO TOP -->
+  <button class="scrollToTop">↑</button>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Counter-Strike 2. Toate drepturile rezervate.</p>
+      <p>Acest website este facut de catre Ionescu Darius-Florin.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
